@@ -1,0 +1,17 @@
+body {
+    background-color: #4375a7;
+}
+
+.info, .info2, p {
+    background-color: beige;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+input, button {
+  transition: box-shadow 0.3s ease, transform 0.5s ease;
+}
+
+input:hover, button:hover {
+  box-shadow: 0 4px 9px cadetblue;
+  transform: translateY(-1px);
+}

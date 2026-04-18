@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+    .info {
+        border-radius: 5px;
+        padding: 20px;
+        margin: 20px;
+        text-align: justify;
+        font-size: large;
+    }
+
+    .info2, p {
+        border-radius: 5px;
+        padding: 20px;
+        margin: 20px;
+        text-align: center;
+        font-size: large;
+    }
+
+    </style>
+</head>
+<body>
+    <!-- 
+    Purpose: Sign up Form for Volunteers
+    Author: Nicole B. Carcueva
+    Date: April 18, 2026
+    -->
+
+<form onsubmit="return validateForm()">
+<div class="info">
+    <label for="fname">Full name:</label>
+    <input type="text" id="fname" name="fname"><br>
+</div>
+<div class="info">
+    <label for="bdate">Birthdate:</label>
+    <input type="date" id="bdate" name="bdate"><br>
+</div>
+<div class="info">
+    <p>Sex:</p>
+        <input type="radio" id="Male" name="sx" value="Male">
+        <label for="Male">Male</label><br>
+        <input type="radio" id="Female" name="sx" value="Female">
+        <label for="Female">Female</label><br>
+        <input type="radio" id="Other" name="sx" value="Other">
+        <label for="Other">Other</label><br>
+</div>
+<div class="info">
+    <label for="mail">Email:</label>
+    <input type="email" id="mail" name="mail"><br><br>
+    <label for="uname">Username:</label>
+    <input type="text" id="uname" name="uname"><br><br>
+    <label for="pass">Password:</label>
+    <input type="password" id="pass" name="pass"><br><br>
+    <label for="cpass">Confirm password:</label>
+    <input type="password" id="cpass" name="cpass"><br><br>
+</div>
+<div class="info">
+    <p>Questions:</p>
+    <p>How often do you see trash around bodies of water?</p>
+        <input type="radio" id="qtwo1" name="qtwo" value="Often">
+        <label for="qtwo1">Often</label>
+        <input type="radio" id="qtwo2" name="qtwo" value="Occasionally">
+        <label for="qtwo2">Occasionally</label>
+        <input type="radio" id="qtwo3" name="qtwo" value="Rarely">
+        <label for="qtwo3">Sometimes</label>
+        <input type="radio" id="qtwo4" name="qtwo" value="Never">
+        <label for="qtwo4">Never</label><br>
+</div>
+<div class="info">
+    <label for="bodywater">Which type of water body is the most affected by pollution?</label>
+    <select name="drop1" id="bodywater">
+        <option value="River">River</option>
+        <option value="Lake">Lake</option>
+        <option value="Canal">Canal</option>
+        <option value="Beach">Beach</option>
+        <option value="Swamps">Swamps</option>
+        <option value="Creek">Creek</option>
+        <option value="Sea">Sea</option>
+    </select>
+</div>
+<div class="info">
+    <p>Which aquatic animals do you think are most affected by pollution?</p>
+        <input type="checkbox" id="an1" name="animals" value="Fish">
+        <label for="an1">Fish</label><br>
+        <input type="checkbox" id="an2" name="animals" value="Coral Reef">
+        <label for="an2">Coral Reef</label><br>
+        <input type="checkbox" id="an3" name="animals" value="Dolphins">
+        <label for="an3">Dolphins</label><br>
+        <input type="checkbox" id="an4" name="animals" value="Whales">
+        <label for="an4">Whales</label><br>
+        <input type="checkbox" id="an5" name="animals" value="Crustaceans">
+        <label for="an5">Crustaceans</label><br>
+</div>
+<div class="info2">
+    <button type="submit">Care for the Oceans!</button>
+</div>
+</form>
+
+    <span id="fnameError"></span>
+    <span id="bdateError"></span>
+    <span id="sxError"></span>
+    <span id="mailError"></span>
+    <span id="unameError"></span>
+    <span id="passError"></span>
+    <span id="cpassError"></span>
+    <span id="qtwoError"></span>
+    <span id="bodywaterError"></span>
+    <span id="animalsError"></span>
+    <span id="successMessage"></span>
+    
+    <script src="script.js"></script>
+</body>
+</html>
